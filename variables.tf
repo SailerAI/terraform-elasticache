@@ -54,10 +54,10 @@ variable "ssm_database_subnet_ids" {
     type        = list(string)
 }
 
-variable "azs" {
-    type        = list(string)
-    description = "List of Availability Zones"
-}
+#variable "azs" {
+#    type        = list(string)
+#    description = "List of Availability Zones"
+#}
 
 variable "replicas_per_node_group" {
     type        = number
