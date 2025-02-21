@@ -23,6 +23,8 @@ No modules.
 | [aws_cloudwatch_log_group.redis_logs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_log_group) | resource |
 | [aws_elasticache_replication_group.main](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/elasticache_replication_group) | resource |
 | [aws_elasticache_subnet_group.main](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/elasticache_subnet_group) | resource |
+| [aws_secretsmanager_secret.redis_primary_endpoint](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/secretsmanager_secret) | resource |
+| [aws_secretsmanager_secret_version.redis_primary_endpoint](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/secretsmanager_secret_version) | resource |
 | [aws_security_group.main](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) | resource |
 | [aws_ssm_parameter.database_subnet_ids](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ssm_parameter) | data source |
 | [aws_ssm_parameter.vpc_id](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ssm_parameter) | data source |
@@ -31,7 +33,6 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_azs"></a> [azs](#input\_azs) | List of Availability Zones | `list(string)` | n/a | yes |
 | <a name="input_engine"></a> [engine](#input\_engine) | Redis engine type | `string` | n/a | yes |
 | <a name="input_engine_version"></a> [engine\_version](#input\_engine\_version) | Version number of the Redis engine | `string` | n/a | yes |
 | <a name="input_environment"></a> [environment](#input\_environment) | Environment (e.g., dev, staging, prod) | `string` | n/a | yes |
