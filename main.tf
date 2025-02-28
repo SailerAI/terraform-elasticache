@@ -21,7 +21,8 @@ resource "aws_elasticache_replication_group" "main" {
   # Security settings
   transit_encryption_enabled    = true                            # Encrypts data in transit using TLS
   at_rest_encryption_enabled   = true                            # Encrypts data at rest
-  
+  transit_encryption_mode       = "preferred"
+
   # Network configuration
   subnet_group_name            = aws_elasticache_subnet_group.main.name
   security_group_ids          = [aws_security_group.main.id]
