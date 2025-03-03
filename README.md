@@ -7,16 +7,11 @@ Elasticacache terraform Module
 ## Example
 
 ```hcl
-module "backend_secrets" {
+module "redis" {
   source       = "github.com/SailerAI/terraform-elasticache"
   project_name = "sailer"
   environment  = "dev"
   region       = "us-east-1"
-
-
-  ### RDS Cluster
-  master_username = "postgres"
-  database_name   = "sailer_dev_example"
 
   ### SSM VPC Parameters created by networkin module
   ssm_vpc_id              = "/sailer/dev/vpc/id"
